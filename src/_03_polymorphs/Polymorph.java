@@ -8,14 +8,16 @@ import java.awt.Graphics;
 //* 3. Add restrictions to the setter method so the member variable cannot be 
 //* 	  adversely altered
 public abstract class Polymorph {
-    private int x=;
-    private int y;
+    protected int x;
+    protected int y;
     protected int width;
     protected int height;
     
-    Polymorph(int x, int y){
+    Polymorph(int x, int y, int width, int height){
    	 this.setX(x);
    	 this.setY(y);
+   	 this.setWidth(width);
+   	 this.setHeight(height);
     }
     
     public void update(){

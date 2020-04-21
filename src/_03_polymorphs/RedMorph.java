@@ -5,14 +5,14 @@ package _03_polymorphs;
 
 	public class RedMorph extends Polymorph{
 
-		RedMorph(int x, int y) {
-			super(x, y);
+		RedMorph(int width, int height, int x, int y) {
+			super(width, height, x, y);
 		}
 
 		@Override
 		public void draw(Graphics g) {
 			g.setColor(Color.red);
-			g.fillRect(getX(), getY(), width, height);
+			g.fillRect(x, y, width, height);
 		}
 		
 	}
