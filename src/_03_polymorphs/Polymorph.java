@@ -1,6 +1,7 @@
 package _03_polymorphs;
 
 import java.awt.Graphics;
+import java.awt.image.BufferedImage;
 //* 1. Make the member variable private (or protected)
 //* 
 //* 2. Make a getter and setter method (accessor and mutator) for the variable.
@@ -12,7 +13,7 @@ public abstract class Polymorph {
     protected int y;
     protected int width;
     protected int height;
-    
+    BufferedImage dragon = new BufferedImage(100, 100, 10);
     Polymorph(int x, int y, int width, int height){
    	 this.setX(x);
    	 this.setY(y);
@@ -22,6 +23,9 @@ public abstract class Polymorph {
     
     public void update(){
    	 
+    }
+    public void update(int x2, int y2) {
+    	
     }
     
     public abstract void draw(Graphics g);
